@@ -301,7 +301,7 @@ Isolated events require a commit before invoking the code, and will commit befor
 
 An alternative is to invoke `if Codeunit.Run()` and then handle things in isolation.
 
-`Codeunit.Run` requires an explicit commit before and has better testability, because there isn't an easy to test isolated events for error cases. To do error case testing, disable test isolation. Otherwise, the error eon't be handled.
+`Codeunit.Run` requires an explicit commit before and has better testability, because there isn't an easy to test isolated events for error cases. To do error case testing, disable test isolation. Otherwise, the error won't be handled.
 
 Events are better than `Codeunit.Run` because they allow multiple subscribers. Running a codeunit only lets one implementation run at a time.
 
